@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje Mobilní Hry</title>
+    <style>
+        :root {
+            --primary: #6200ee;
+            --background: #121212;
+            --surface: #1e1e1e;
+            --text: #ffffff;
+            --text-secondary: #b0b0b0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            text-align: center;
+            padding: 4rem 1rem 2rem 1rem;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: #bb86fc;
+        }
+        header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            flex: 1;
+        }
+        .game-card {
+            background-color: var(--surface);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s;
+        }
+        .game-card:hover {
+            transform: translateY(-5px);
+        }
+        .game-info h3 {
+            margin-top: 0;
+            font-size: 1.5rem;
+            color: var(--text);
+        }
+        .game-info p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        .btn-google {
+            display: inline-block;
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 1rem;
+            border: 1px solid #333;
+            transition: background 0.2s;
+        }
+        .btn-google:hover {
+            background-color: #222;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            border-top: 1px solid #222;
+        }
+        footer a {
+            color: #bb86fc;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Moje Mobilní Hry</h1>
+        <p>Objevte mé indie hry vytvořené s vášní pro Android.</p>
+    </header>
+
+    <div class="container">
+        <!-- HRA 1 -->
+        <div class="game-card">
+            <div class="game-info">
+                <h3>Název Hry 1</h3>
+                <p>Krátký a chytlavý popis vaší první hry. Řekněte hráčům, o co v ní jde a proč si ji musí stáhnout.</p>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=YOUR_PACKAGE_NAME" class="btn-google" target="_blank">
+                Stáhnout na Google Play
+            </a>
+        </div>
+
+        <!-- HRA 2 (Můžete zkopírovat pro další hry) -->
+        <div class="game-card">
+            <div class="game-info">
+                <h3>Název Hry 2</h3>
+                <p>Popis vaší druhé skvělé hry. Nové úrovně, skvělá grafika a zábava na hodinové večery.</p>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=YOUR_PACKAGE_NAME_2" class="btn-google" target="_blank">
+                Stáhnout na Google Play
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Vaše Jméno / Studio. Všechna práva vyhrazena. | <a href="privacy.html">Zásady ochrany osobních údajů</a></p>
+    </footer>
+
+</body>
+</html>
